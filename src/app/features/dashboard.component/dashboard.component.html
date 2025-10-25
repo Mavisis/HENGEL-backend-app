@@ -1,0 +1,75 @@
+<!-- // ===============================================
+// FILE: src/app/features/dashboard/dashboard.component.html
+// ===============================================
+/* -->
+<div class="dashboard-container">
+  <nav class="navbar">
+    <div class="nav-content">
+      <h1 class="logo">QueAgent</h1>
+      <button (click)="logout()" class="logout-button">Logout</button>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="welcome-section">
+      <h2>Welcome back, {{ user?.email }}!</h2>
+      <p class="subtitle">You are successfully logged in</p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="card-icon">👤</div>
+        <h3>User Information</h3>
+        <div class="info-row">
+          <span class="label">Email:</span>
+          <span class="value">{{ user?.email }}</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Role:</span>
+          <span class="value role-badge">{{ user?.role }}</span>
+        </div>
+        <div class="info-row">
+          <span class="label">User ID:</span>
+          <span class="value">{{ user?.id }}</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">🔒</div>
+        <h3>Security Status</h3>
+        <div class="status-item">
+          <span class="status-dot active"></span>
+          <span>Authenticated Session</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot active"></span>
+          <span>JWT Token Valid</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot active"></span>
+          <span>Protected Route Access</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">⏰</div>
+        <h3>Current Time</h3>
+        <p class="time-display">{{ currentTime | date:'medium' }}</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">🌐</div>
+        <h3>Application Info</h3>
+        <div class="info-row">
+          <span class="label">Domain:</span>
+          <span class="value">app.queagent.nl</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Status:</span>
+          <span class="value status-active">Active</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+*/
